@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Spotify Profile</title>
+  <script src="src/script.js" type="module"></script>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css">
+</head>
+
+<body class="container">
+
+  <section id="profile">
+    <div>
+      <span id="avatar"></span>
+    </div>
+    <ul>
+      <h2 id="displayName"></h2>
+      <li>User ID: <span id="id"></span></li>
+      <li>Email: <span id="email"></span></li>
+      <li>Spotify URI: <a id="uri" href="#"></a></li>
+      <li>Link: <a id="url" href="#"></a></li>
+    </ul>
+  </section>
+
+  <section id="searchMusic">
+    <h2>Search for music</h2>
+    <input type="search" name="search" placeholder="Search" aria-label="Search" id="search" />
+    <h3 id="searchResultsNumber"></h3>
+    <ul id="searchResults"></ul>
+  </section>
+
+  <div id="embed-iframe"></div>
+
+  <section id="playlists">
+    <h2>Playlists</h2>
+    <ul id="playlistsList"></ul>
+  </section>
+
+
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</body>
+
+</html>
+
+<!-- Note- We're referring directly to the TypeScript file, 
+ and we're using the `type="module"` attribute. 
+ Vite will transpile our TypeScript to JavaScript 
+ so that it can run in the browser. -->
