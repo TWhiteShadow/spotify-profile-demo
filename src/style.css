@@ -1,3 +1,12 @@
+
+html{
+  background-color: #212121 !important;
+}
+
+iframe html{
+  background-color: red !important;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -141,3 +150,4 @@ button:focus-visible {
   max-height: 150px;
   object-fit: cover;
 }
+
